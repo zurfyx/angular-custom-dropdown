@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "inlineSources": false,
+    "declaration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "stripInternal": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "outDir": "./dist"
+  },
+  "files": [
+    "typings/index.d.ts",
+    "src/index.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "aot"
+  ],
+  "lib": [
+    "es6",
+    "dom"
+  ],
+  "angularCompilerOptions": {
+    "genDir": "aot",
+    "strictMetadataEmit": true
+  }
+}

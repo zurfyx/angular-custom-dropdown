@@ -1,0 +1,51 @@
+{
+  "name": "angular-custom-dropdown",
+  "description": "Angular2+ Dropdown, simple dropdowns without relying on CSS frameworks.",
+  "author": {
+    "name": "Gerard Rovira Sánchez",
+    "email": "zurfyx@gmail.com",
+    "url": "zurfyx.com"
+  },
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "typings install && ngc -p tsconfig-aot.json",
+    "install": "npm run build",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zurfyx/angular-dropdown.git"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "angular4",
+    "typescript"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zurfyx/angular-dropdown/issues"
+  },
+  "homepage": "https://github.com/zurfyx/angular-dropdown#readme",
+  "dependencies": {
+    "@angular/compiler-cli": "^4.1.0",
+    "@angular/core": "^4.1.0",
+    "@angular/platform-server": "^4.1.0",
+    "typings": "^1.0.4"
+  },
+  "devDependencies": {
+    "@angular/animations": "^4.1.0",
+    "@angular/common": "^4.1.0",
+    "@angular/compiler": "^4.1.0",
+    "@angular/platform-browser": "^4.1.0",
+    "@angular/platform-browser-dynamic": "^4.1.0",
+    "rxjs": "^5.1.0",
+    "tslint": "^4.3.1",
+    "typescript": "~2.1.0",
+    "zone.js": "0.8.4"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
