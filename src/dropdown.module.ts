@@ -8,8 +8,4 @@ import { DropdownDirective } from './dropdown.directive';
   declarations: [DropdownDirective],
   providers: [],
 })
-export class DropdownModule {
-  constructor() {
-    console.info('loaded module');
-  }
- }
+export class DropdownModule { }
