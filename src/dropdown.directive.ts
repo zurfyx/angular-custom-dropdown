@@ -1,3 +1,5 @@
+/* tslint:disable:directive-selector */
+
 import { Directive, ElementRef, Renderer } from '@angular/core';
 
 @Directive({
@@ -13,7 +15,9 @@ export class DropdownDirective {
   ) { }
 
   onDocumentClick(event: Event) {
-    if (!this.elementRef.nativeElement.contains(event.target)) {
+    const isOutsideClick = !this.elementRef.nativeElement.contains(event.target);
+    const isLinkClick = event.target instanceof HTMLLinkElement;
+    if (isOutsideClick) {
       this.setActive(false);
       return;
     }

@@ -1,49 +1,72 @@
 {
   "name": "angular-custom-dropdown",
-  "description": "Angular2+ Dropdown, simple dropdowns without relying on CSS frameworks.",
+  "description": "Angular2+ Dropdown. Simple dropdowns without relying on CSS frameworks.",
   "author": {
     "name": "Gerard Rovira Sánchez",
     "email": "zurfyx@gmail.com",
     "url": "zurfyx.com"
   },
-  "version": "1.0.1",
-  "main": "dist/index.js",
+  "version": "1.1.0",
+  "license": "MIT",
   "scripts": {
-    "build": "typings install && ngc -p tsconfig-aot.json",
-    "install": "npm run build",
-    "test": ""
+    "start": "ng serve",
+    "build": "ng-packagr -p ng-package.json",
+    "build-ghpages": "ng build --base-href \"https://zurfyx.github.io/angular-custom-dropdown/\" --output-path \"dist-ghpages\"",
+    "test": "npm run lint && ng test --watch false",
+    "test-watch": "ng test",
+    "e2e": "ng e2e",
+    "lint": "ng lint"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zurfyx/angular-dropdown.git"
+    "url": "git+https://github.com/zurfyx/angular-custom-dropdown.git"
   },
+  "bugs": {
+    "url": "https://github.com/zurfyx/angular-custom-dropdown/issues"
+  },
+  "homepage": "https://github.com/zurfyx/angular-custom-dropdown#readme",
   "keywords": [
     "angular",
-    "angular2",
-    "angular4",
-    "typescript"
+    "dropdown",
+    "custom",
+    "simple",
+    "css"
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zurfyx/angular-dropdown/issues"
-  },
-  "homepage": "https://github.com/zurfyx/angular-dropdown#readme",
-  "dependencies": {
-    "@angular/compiler-cli": "^4.1.0",
-    "@angular/core": "^4.1.0",
-    "@angular/platform-server": "^4.1.0",
-    "typings": "^1.0.4"
-  },
+  "private": false,
+  "dependencies": {},
   "devDependencies": {
-    "@angular/animations": "^4.1.0",
-    "@angular/common": "^4.1.0",
-    "@angular/compiler": "^4.1.0",
-    "@angular/platform-browser": "^4.1.0",
-    "@angular/platform-browser-dynamic": "^4.1.0",
-    "rxjs": "^5.1.0",
-    "tslint": "^4.3.1",
-    "typescript": "~2.1.0",
-    "zone.js": "0.8.4"
+    "@angular/animations": "^4.2.4",
+    "@angular/cli": "1.4.9",
+    "@angular/common": "^4.2.4",
+    "@angular/compiler": "^4.2.4",
+    "@angular/compiler-cli": "^4.2.4",
+    "@angular/core": "^4.2.4",
+    "@angular/forms": "^4.2.4",
+    "@angular/http": "^4.2.4",
+    "@angular/language-service": "^4.2.4",
+    "@angular/platform-browser": "^4.2.4",
+    "@angular/platform-browser-dynamic": "^4.2.4",
+    "@angular/router": "^4.2.4",
+    "@types/jasmine": "~2.5.53",
+    "@types/jasminewd2": "~2.0.2",
+    "@types/node": "~6.0.60",
+    "codelyzer": "~3.2.0",
+    "core-js": "^2.4.1",
+    "jasmine-core": "~2.6.2",
+    "jasmine-spec-reporter": "~4.1.0",
+    "karma": "~1.7.0",
+    "karma-chrome-launcher": "~2.1.1",
+    "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^1.2.1",
+    "karma-jasmine": "~1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "ng-packagr": "^1.5.0-rc.1",
+    "protractor": "~5.1.2",
+    "rxjs": "^5.4.2",
+    "ts-node": "~3.2.0",
+    "tslint": "~5.7.0",
+    "typescript": "~2.3.3",
+    "zone.js": "^0.8.14"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
