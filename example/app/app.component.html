@@ -1,5 +1,25 @@
-<div class="greetings center">
-  <div>
-    <h1>Angular Custom Dropdown ▼</h1>
+<div class="center">
+  <div class="dropdown" dropdown>
+    <h1 class="fake-link dropdown-toggle greetings" dropdownToggle>Angular Custom Dropdown ▼</h1>
+    <ul class="dropdown-menu" dropdownMenu>
+      <li><a class="neat" href="https://github.com/zurfyx/angular-custom-modal" rel="noopener" target="_blank">Check it out @ GitHub</a></li>
+      <li><a class="neat" href="#">...</a></li>
+    </ul>
   </div>
+  <!--
+  Classes are optional. But highly recommended. The ones above feature Bootstrap-like classes.
+  <div dropdown>
+    <h1 dropdownToggle>Angular Custom Dropdown ▼</h1>
+    <ul dropdownMenu>
+      <li>Check it out @ GitHub</li>
+    </ul>
+  </div>
+  -->
+  <!-- 
+  References can also be used to access dropdown methods. Either from template or component.
+  <div #myDropdown=dropdown dropdown>
+    <h1 class="fake-link" (click)="myDropdown.toggle()">Angular Custom Dropdown ▼</h1>
+    ...
+  </div>
+  -->
 </div>

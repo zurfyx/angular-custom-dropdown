@@ -1,5 +1,56 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
 
+/* Dropdown specific styles */
+.dropdown  {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  display: block;
+  align-self: center;
+  width: 80%;
+  opacity: 0;
+  margin: -.25rem 0 0 10%; // -.25rem top (animation).
+  padding: 0.25rem;
+  list-style-type: none;
+  background-color: #fff;
+  border-radius: 4px;
+  transition: .2s all ease-in;
+}
+
+.dropdown-menu li {
+  padding: .5rem .5rem;
+}
+
+.dropdown-menu li + li {
+  border-top: 1px solid #e1e1e1;
+  padding-top: .5rem;
+}
+
+.dropdown-menu li > a {
+  display: block;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  transition: .2s background-color ease-in;
+}
+
+.dropdown-menu li > a:hover {
+  background-color: #e9e9e9;
+}
+
+.dropdown.open .dropdown-menu {
+  opacity: 1;
+  margin-top: 0;
+}
+
+a.neat {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* /Dropdown specific styles */
+
 html, body {
   color: #444;
   font-family: 'Open Sans', sans-serif;
@@ -33,4 +84,8 @@ a.neat {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.fake-link {
+  cursor: pointer;
 }
