@@ -1,5 +1,3 @@
-/* tslint:disable:directive-selector */
-
 import { Directive, ElementRef, Renderer, HostListener } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';

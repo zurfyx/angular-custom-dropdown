@@ -1,5 +1,3 @@
-/* tslint:disable:directive-selector */
-
 import { Directive, Host, HostListener } from '@angular/core';
 
 import { DropdownDirective } from './dropdown.directive';

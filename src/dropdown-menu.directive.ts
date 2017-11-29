@@ -1,5 +1,3 @@
-/* tslint:disable:directive-selector */
-
 import { Directive, ElementRef, Host, OnInit, OnDestroy } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';

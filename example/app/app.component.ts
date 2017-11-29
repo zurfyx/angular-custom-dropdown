@@ -1,6 +1,7 @@
 import { Component, ViewEncapsulation, ViewChild, OnInit, OnDestroy } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Subject } from 'rxjs/Subject';
+import 'rxjs/add/operator/takeUntil';
 
 import { DropdownDirective, TOGGLE_STATUS } from '../../src';
 
