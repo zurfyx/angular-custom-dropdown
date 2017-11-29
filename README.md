@@ -55,6 +55,8 @@ import { DropdownModule } from 'angular-custom-dropdown';
 
 Styles are optional and up to you. Below are the ones that the demo page uses, but you can also use Bootstrap styles for that, or any other compatible library or framework. For most cases you'll just need to adapt the class names of the HTML snippet above.
 
+If you want to read more about styling see the [next section](#about-styling).
+
 ```
 .dropdown  {
   position: relative;
@@ -102,6 +104,56 @@ Styles are optional and up to you. Below are the ones that the demo page uses, b
 a.neat {
   color: inherit;
   text-decoration: none;
+}
+```
+
+## About styling
+
+This library carries no predefined styles, which prevents clashing with your own set of styles or CSS frameworks. You can find the demo copy-paste dropdown styles above.
+
+A minimal version (purely dropdown functionality) would look like the following:
+
+```
+.dropdown  {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  display: block;
+  opacity: 0;
+}
+
+.dropdown.open .dropdown-menu {
+  opacity: 1;
+}
+```
+
+You can then add your own set of styles to make it look beautiful, or use a CSS framework. Note that
+the classes naming [matches Bootstrap](https://getbootstrap.com/docs/4.0/components/dropdowns/#examples) (and it is actually compatible with it!).
+
+### Aligning
+
+Our demo example is centered with the parent container, and we do so through CSS. You can easy move the `.dropdown-menu` wherever you need it.
+
+**Left**
+
+*By default.*
+
+**Center**
+
+```
+.dropdown-menu {
+  left: 50%;
+  transform: translateX(-50%);
+}
+```
+
+**Right**
+
+```
+.dropdown-menu {
+  right: 0;
 }
 ```
 
